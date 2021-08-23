@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .col-1 {width: 25%;}
+    .col-2 {width: 25%;}
+    .col-3 {width: 50%;}
+    [class*="col-"] {
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 30px;
+        background-color: blue;
+        border: black solid 1px;
+        height: 100px;
+}
+    @media only screen and (max-width: 768px) {
+        .col-1 {width: 50%;}
+        .col-2 {width: 50%;}
+        .col-3 {width: 100%;}
+    }
+    </style>
+</head>
+<body>
+<div>
+    <div class="col-1">AAAAAAAAAA</div>
+    <div class="col-2">AAAAAAAAAA</div>
+    <div class="col-3">AAAAAAAAAA</div>
+</div>
+</body>
+</html>
